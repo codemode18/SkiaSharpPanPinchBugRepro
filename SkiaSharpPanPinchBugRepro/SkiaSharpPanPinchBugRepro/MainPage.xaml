@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
+             x:Class="SkiaSharpPanPinchBugRepro.MainPage">
+
+    <StackLayout>
+        <ContentView x:Name="pinchPanContentView" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <forms:SKCanvasView x:Name="canvasView" Touch="CanvasView_OnTouch" EnableTouchEvents="True" PaintSurface="CanvasView_OnPaintSurface"/>
+        </ContentView>
+    </StackLayout>
+
+</ContentPage>
